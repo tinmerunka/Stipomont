@@ -251,7 +251,6 @@ function ProjectBlock({
               <h2 className="font-display text-3xl md:text-4xl font-bold text-stipo-text leading-tight">
                 {project.title}
               </h2>
-              <p className="font-display text-lg text-stipo-muted mt-1">{project.subtitle}</p>
               <div className="flex items-center gap-1.5 text-stipo-muted text-sm mt-3">
                 <MapPin className="w-4 h-4 text-stipo-accent flex-shrink-0" />
                 <span>{project.location}</span>
