@@ -6,7 +6,7 @@ export const projects = [
     title: 'Stanovi Šestine',
     location: 'Zagreb',
     type: 'Stambeni objekt',
-    desc: 'Kompletan instalacijski projekt višestambene zgrade - vodovod, kanalizacija i centralno grijanje.',
+    desc: 'Kompletan instalacijski projekt višestambene zgrade - vodovod, sanitarije i centralno grijanje.',
     image: images.projects.sestine,
   },
   {
@@ -30,7 +30,7 @@ export const projects = [
     title: 'Projekt Žitnjak',
     location: 'Zagreb',
     type: 'Stambeni objekt',
-    desc: 'Instalacijski radovi na stambenom objektu u Zagrebu - vodovod, kanalizacija i sustav grijanja.',
+    desc: 'Instalacijski radovi na stambenom objektu u Zagrebu - vodovod, infrastrukturne instalacije i sustav grijanja.',
     image: images.projects.zitnjak,
   },
 ]

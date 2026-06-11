@@ -18,7 +18,7 @@ const socialLinks = [
 export default function Hero() {
   return (
     <MinimalistHero
-      mainText="Instalacijski radovi u stambenim i poslovnim prostorima - vodovod, grijanje, plin i kanalizacija. Od 1995. godine."
+      mainText="Instalacijski radovi u stambenim i poslovnim prostorima - vodovod, grijanje, plin i sanitarije. Od 1995. godine."
       readMoreLink="#o-nama"
       imageSrc={images.hero}
       imageAlt="Vodoinstalater na poslu"

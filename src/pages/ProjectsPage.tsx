@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowLeft, MapPin, CheckCircle, X, ChevronLeft, ChevronRight, Images } from 'lucide-react'
 import { projectsDetailed } from '@/data/projectsDetailed'
@@ -223,10 +223,14 @@ function ProjectBlock({
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent md:bg-gradient-to-r md:from-transparent md:to-transparent" />
             {/* Status badge */}
             <div className="absolute top-4 left-4">
-              <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold
+              <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm
                 ${project.status === 'Prodano'
-                  ? 'bg-stipo-subtle/80 text-stipo-muted'
-                  : 'bg-stipo-accent/20 text-stipo-accent border border-stipo-accent/30'
+                  ? 'bg-slate-800/85 text-slate-200 border border-slate-600/60'
+                  : project.status === 'Završeno'
+                  ? 'bg-emerald-700/85 text-emerald-100 border border-emerald-500/60'
+                  : project.status === 'U prodaji'
+                  ? 'bg-sky-700/85 text-sky-100 border border-sky-500/60'
+                  : 'bg-amber-700/85 text-amber-100 border border-amber-500/60'
                 }`}
               >
                 {project.status !== 'Prodano' && <CheckCircle className="w-3 h-3" />}
@@ -300,6 +304,7 @@ function ProjectBlock({
 
 export default function ProjectsPage() {
   const { hash } = useLocation()
+  const navigate = useNavigate()
 
   useEffect(() => {
     if (hash) {
@@ -318,13 +323,13 @@ export default function ProjectsPage() {
       {/* Top bar */}
       <header className="sticky top-0 z-50 bg-stipo-dark/95 backdrop-blur-md border-b border-stipo-border">
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-16 flex items-center justify-between">
-          <Link
-            to="/"
+          <button
+            onClick={() => navigate(-1)}
             className="flex items-center gap-2 text-stipo-muted hover:text-stipo-text transition-colors text-sm font-medium cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
             Natrag na početnu
-          </Link>
+          </button>
           <Link to="/" className="font-display text-lg font-bold text-stipo-text hover:text-stipo-accent transition-colors cursor-pointer">
             Stipomont
           </Link>

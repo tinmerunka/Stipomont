@@ -31,7 +31,7 @@ export const services = [
   },
   {
     id: 'kljuc',
-    title: 'Ključ u ruke',
+    title: 'Kompletna izvedba',
     desc: 'Kompletno izvođenje instalacijskih radova — od projektiranja do primopredaje objekta.',
     icon: 'KeyRound',
   },

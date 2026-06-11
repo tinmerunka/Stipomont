@@ -21,6 +21,7 @@ const contactInfo = [
     label: 'Telefon',
     value: '+385 98 202 349 (Stipo)',
     href: 'tel:+38598202349',
+    extra: { value: '+385 98 440 460 (Anđelka)', href: 'tel:+385984404604' },
   },
   {
     icon: Clock,
@@ -65,7 +66,7 @@ export default function Contact() {
           {/* Info cards */}
           <AnimatedSection delay={0.1}>
             <div className="flex flex-col gap-4">
-              {contactInfo.map(({ icon: Icon, label, value, href }) => (
+              {contactInfo.map(({ icon: Icon, label, value, href, extra }) => (
                 <div
                   key={label}
                   className="bg-stipo-card border border-stipo-border rounded-2xl p-5 flex items-start gap-4"
@@ -76,11 +77,16 @@ export default function Contact() {
                   <div>
                     <p className="text-xs font-semibold tracking-widest uppercase text-stipo-muted mb-1">{label}</p>
                     {href ? (
-                      <a href={href} className="text-stipo-text text-sm hover:text-stipo-accent transition-colors">
+                      <a href={href} className="text-stipo-text text-sm hover:text-stipo-accent transition-colors block">
                         {value}
                       </a>
                     ) : (
                       <p className="text-stipo-text text-sm">{value}</p>
+                    )}
+                    {extra && (
+                      <a href={extra.href} className="text-stipo-text text-sm hover:text-stipo-accent transition-colors block mt-0.5">
+                        {extra.value}
+                      </a>
                     )}
                   </div>
                 </div>

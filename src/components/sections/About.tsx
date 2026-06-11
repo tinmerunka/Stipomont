@@ -38,7 +38,7 @@ export default function About() {
                 Stipomont d.o.o. osnovan je 1995. godine kao obrtničko poduzeće, a danas djeluje kao obiteljsko društvo s ograničenom odgovornošću sa sjedištem u Zagrebu.
               </p>
               <p>
-                Tvrtku je utemeljio <span className="text-stipo-text font-medium">Stipo Valentić</span>, a danas je vode njegovi sinovi <span className="text-stipo-text font-medium">Dalibor</span> i <span className="text-stipo-text font-medium">Filip</span>. Kroz tri desetljeća izradili smo niz velikih projekata u instalacijama vodovoda, kanalizacije, grijanja, hlađenja i plinskih instalacija.
+                Tvrtku je utemeljio <span className="text-stipo-text font-medium">Stipo Valentić</span>, a danas je vode njegovi sinovi <span className="text-stipo-text font-medium">Dalibor</span> i <span className="text-stipo-text font-medium">Filip</span>. Kroz tri desetljeća izradili smo niz velikih projekata u instalacijama vodovoda, grijanja, hlađenja i plinskih instalacija.
               </p>
               <p>
                 Svaki projekt tretiramo s jednakom pažnjom — od manjeg stambenog zahvata do kompleksnih poslovnih objekata. Kvaliteta i pouzdanost nisu nam samo riječi — to je naš standard.
