@@ -82,6 +82,11 @@ export default function Footer() {
 
         <div className="border-t border-stipo-border pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-stipo-subtle text-sm">© 2025 Stipomont d.o.o. — Sva prava pridržana.</p>
+          <img
+            src="/img/hamag_bicro.jpg"
+            alt="HAMAG-BICRO partner"
+            className="h-10"
+          />
           <p className="text-stipo-subtle text-sm">OIB: 81717098924</p>
         </div>
       </div>
