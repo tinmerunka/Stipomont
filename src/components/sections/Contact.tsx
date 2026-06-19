@@ -21,7 +21,7 @@ const contactInfo = [
     label: 'Telefon',
     value: '+385 98 202 349 (Stipo)',
     href: 'tel:+38598202349',
-    extra: { value: '+385 98 440 460 (Anđelka)', href: 'tel:+385984404604' },
+    extra: { value: '+385 98 1860 799 (Dalibor)', href: 'tel:+385981860799' },
   },
   {
     icon: Clock,

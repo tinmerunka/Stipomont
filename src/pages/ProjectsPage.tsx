@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowLeft, MapPin, CheckCircle, X, ChevronLeft, ChevronRight, Images } from 'lucide-react'
+import { ArrowLeft, MapPin, X, ChevronLeft, ChevronRight, Images } from 'lucide-react'
 import { projectsDetailed } from '@/data/projectsDetailed'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 
@@ -223,17 +223,14 @@ function ProjectBlock({
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent md:bg-gradient-to-r md:from-transparent md:to-transparent" />
             {/* Status badge */}
             <div className="absolute top-4 left-4">
-              <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm
-                ${project.status === 'Prodano'
-                  ? 'bg-slate-800/85 text-slate-200 border border-slate-600/60'
-                  : project.status === 'Završeno'
-                  ? 'bg-emerald-700/85 text-emerald-100 border border-emerald-500/60'
-                  : project.status === 'U prodaji'
-                  ? 'bg-sky-700/85 text-sky-100 border border-sky-500/60'
-                  : 'bg-amber-700/85 text-amber-100 border border-amber-500/60'
+              <span className={`text-base font-semibold tracking-wide px-4 py-1.5 rounded-full backdrop-blur-sm
+                ${project.status === 'U prodaji'
+                  ? 'bg-green-500/90 text-white'
+                  : project.status === 'Uskoro u prodaji'
+                  ? 'bg-amber-500/90 text-white'
+                  : 'bg-white/20 text-white'
                 }`}
               >
-                {project.status !== 'Prodano' && <CheckCircle className="w-3 h-3" />}
                 {project.status}
               </span>
             </div>
