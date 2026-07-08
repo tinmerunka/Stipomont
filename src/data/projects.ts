@@ -11,6 +11,15 @@ export const projects = [
     image: images.projects.sestine,
   },
   {
+    id: 'tribunj',
+    title: 'Projekt Tribunj',
+    location: 'Tribunj',
+    type: 'Stambeni objekt s bazenima',
+    status: 'U prodaji' as const,
+    desc: 'Stambeni objekt 600m od mora s 6 stanova (83–114 m²) i dva bazena, useljivo odmah.',
+    image: images.projects.tribunj,
+  },
+  {
     id: 'zitnjak',
     title: 'Projekt Žitnjak',
     location: 'Zagreb',

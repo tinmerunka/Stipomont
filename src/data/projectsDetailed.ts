@@ -16,6 +16,22 @@ export const projectsDetailed = [
     ],
   },
   {
+    id: 'tribunj',
+    title: 'Projekt Tribunj',
+    location: 'Tribunj',
+    status: 'U prodaji',
+    image: images.projects.tribunj,
+    gallery: images.galleries.tribunj,
+    desc: 'Stambeni objekt 600m od mora, u Tribunju. 6 stanova površine od 83 m² do 114 m², dva bazena i useljivo odmah. Izveden kompletan instalacijski projekt — vodovod, sanitarije i sustav grijanja.',
+    details: [
+      { label: 'Tip objekta', value: 'Stambeni objekt s bazenima' },
+      { label: 'Lokacija', value: 'Tribunj — 600m od mora' },
+      { label: 'Broj stanova', value: '6 (83 m² – 114 m²)' },
+      { label: 'Bazeni', value: '2' },
+      { label: 'Status', value: 'Useljivo odmah' },
+    ],
+  },
+  {
     id: 'zitnjak',
     title: 'Projekt Žitnjak',
     location: 'Zagreb — Žitnjak',
