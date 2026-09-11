@@ -2,15 +2,6 @@ import { images } from './images'
 
 export const projects = [
   {
-    id: 'sestine',
-    title: 'Stanovi Šestine',
-    location: 'Zagreb',
-    type: 'Stambeni objekt',
-    status: 'U prodaji' as const,
-    desc: 'Kompletan instalacijski projekt višestambene zgrade - vodovod, sanitarije i centralno grijanje.',
-    image: images.projects.sestine,
-  },
-  {
     id: 'tribunj',
     title: 'Projekt Tribunj',
     location: 'Tribunj',
@@ -18,6 +9,15 @@ export const projects = [
     status: 'U prodaji' as const,
     desc: 'Stambeni objekt 600m od mora s 6 stanova (83–114 m²) i dva bazena, useljivo odmah.',
     image: images.projects.tribunj,
+  },
+  {
+    id: 'sestine',
+    title: 'Stanovi Šestine',
+    location: 'Zagreb',
+    type: 'Stambeni objekt',
+    status: 'Prodano' as const,
+    desc: 'Kompletan instalacijski projekt višestambene zgrade - vodovod, sanitarije i centralno grijanje.',
+    image: images.projects.sestine,
   },
   {
     id: 'zitnjak',

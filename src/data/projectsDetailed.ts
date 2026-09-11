@@ -2,20 +2,6 @@ import { images } from './images'
 
 export const projectsDetailed = [
   {
-    id: 'sestine',
-    title: 'Projekt Šestine',
-    location: 'Zagreb — Šestine',
-    status: 'U prodaji',
-    image: images.projects.sestine,
-    gallery: images.galleries.sestine,
-    desc: 'Kompletan instalacijski projekt luksuzne višestambene zgrade na Šestinskom vrhu. Izvedeni su svi instalacijski radovi - vodovod, centralno grijanje i plinske instalacije, uključujući pripremu za privatne bazene u sklopu pojedinih stanova.',
-    details: [
-      { label: 'Tip objekta', value: 'Stambena zgrada' },
-      { label: 'Lokacija', value: 'Šestinski vrh 13, Zagreb' },
-      { label: 'Status', value: 'U prodaji' },
-    ],
-  },
-  {
     id: 'tribunj',
     title: 'Projekt Tribunj',
     location: 'Tribunj',
@@ -29,6 +15,20 @@ export const projectsDetailed = [
       { label: 'Broj stanova', value: '6 (83 m² – 114 m²)' },
       { label: 'Bazeni', value: '2' },
       { label: 'Status', value: 'Useljivo odmah' },
+    ],
+  },
+  {
+    id: 'sestine',
+    title: 'Projekt Šestine',
+    location: 'Zagreb — Šestine',
+    status: 'Prodano',
+    image: images.projects.sestine,
+    gallery: images.galleries.sestine,
+    desc: 'Kompletan instalacijski projekt luksuzne višestambene zgrade na Šestinskom vrhu. Izvedeni su svi instalacijski radovi - vodovod, centralno grijanje i plinske instalacije, uključujući pripremu za privatne bazene u sklopu pojedinih stanova.',
+    details: [
+      { label: 'Tip objekta', value: 'Stambena zgrada' },
+      { label: 'Lokacija', value: 'Šestinski vrh 13, Zagreb' },
+      { label: 'Status', value: 'Prodano' },
     ],
   },
   {
