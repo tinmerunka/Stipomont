@@ -13,7 +13,7 @@ export const images = {
   // ─── PROJEKTI (naslovna slika — prikazuje se na početnoj stranici) ───
   projects: {
     sestine:   '/img/sestine1.jpeg',
-    tribunj:   '/img/Tribunj1.jpeg',
+    tribunj:   '/img/tribunj_ev_01.jpg',
     horvatova: '/img/horvatova1.jpeg',
     krk:       '/img/krk1.png',
     zitnjak:   '/img/zitnjak1.jpeg',
@@ -22,7 +22,7 @@ export const images = {
   // ─── GALERIJE (sve slike — prikazuju se na stranici projekata) ────────
   galleries: {
     sestine:   ['/img/sestine1.jpeg', '/img/sestine2.jpeg', '/img/sestine3.jpeg', '/img/sestine4.jpeg', '/img/sestine5.jpeg'],
-    tribunj:   ['/img/Tribunj1.jpeg', '/img/Tribunj2.jpeg', '/img/Tribunj3.jpeg', '/img/Tribunj4.jpeg', '/img/Tribunj5.jpeg', '/img/Tribunj6.jpeg', '/img/Tribunj7.jpeg'],
+    tribunj:   ['/img/tribunj_ev_01.jpg', '/img/tribunj_ev_02.jpg', '/img/tribunj_ev_03.jpg', '/img/tribunj_ev_04.jpg', '/img/Tribunj1.jpeg', '/img/Tribunj2.jpeg', '/img/Tribunj3.jpeg', '/img/Tribunj4.jpeg', '/img/Tribunj5.jpeg', '/img/Tribunj6.jpeg', '/img/Tribunj7.jpeg'],
     horvatova: ['/img/horvatova1.jpeg', '/img/horvatova2.jpeg', '/img/horvatova3.jpeg', '/img/horvatova4.jpeg', '/img/horvatova5.jpeg'],
     krk:       ['/img/krk1.png', '/img/krk2.jpg', '/img/krk3.jpg'],
     zitnjak:   ['/img/zitnjak1.jpeg', '/img/zitnjak2.jpeg', '/img/zitnjak3.jpeg', '/img/zitnjak4.jpeg'],
